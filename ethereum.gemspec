@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
     "documentation_uri" => "https://q9f.github.io/eth.rb/",
     "github_repo" => "https://github.com/q9f/eth.rb",
     "source_code_uri" => "https://github.com/q9f/eth.rb",
-  }.freeze
+  }
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "https://rubygems.org"
@@ -45,4 +45,5 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "activesupport", "~> 7.0"
   spec.add_dependency "keccak", "~> 1.3"
+  spec.add_dependency "digest-sha3-patched-ruby-3", "~> 1.1", ">= 1.1.1"
 end
